@@ -9,7 +9,7 @@
   </p>
 
 
-I will create a base project structure for a Pharo project following the [ba-st](https://github.com/ba-st) conventions.
+It will create a base project structure for a Pharo project following the [ba-st](https://github.com/ba-st) conventions.
 
 ## License
 - The code is licensed under [MIT](LICENSE).
@@ -26,8 +26,8 @@ I will create a base project structure for a Pharo project following the [ba-st]
 - Clone this repository
 - Execute `setup.sh` providing the required information
 - Review the proposed files and adapt it to your own needs
-- Clone you new repository
-- You can ease the releases configuration in Travis CI by using `travis setup releases` on you repo and copying the encrypted key to the proposed travis yml file
+- Clone your new repository
+- You can ease the releases configuration in Travis CI by using `travis setup releases` on your repo and copying the encrypted key to the proposed travis yml file
 - Move the proposed file structure into your repo
 - Commit and push the changes to GitHub
 - Go to the repo settings and protect the master branch
@@ -35,10 +35,10 @@ I will create a base project structure for a Pharo project following the [ba-st]
 ## Proposed Project Structure
 
 The script will propose the following structure:
-- `assets/` : Location for static resources of the project
-- `assets/logos/` : Location of project logo images
-- `docs/` : Documentation location
-- `source/` : Source Code location
+- `assets/` : Static resources
+- `assets/logos/` : Project logo images
+- `docs/` : Documentation 
+- `source/` : Source Code 
 - `README.md` : Readme
 - `CONTRIBUTING.md` : Contribution Guidelines
 - `LICENSE` : MIT License
