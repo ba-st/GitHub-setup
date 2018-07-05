@@ -76,6 +76,10 @@ sed -i "s/<BASELINE_NAME>/${REPO_NAME//-}/g" $EXPORT_LOCATION/docs/Installation.
 sed -i "s/<OWNER>/$OWNER/g" $EXPORT_LOCATION/docs/Installation.md
 print_success "  [OK]"
 
+print_info "  Copying source code format properties file..."
+cp templates/.properties $EXPORT_LOCATION/source/.properties
+print_success "  [OK]"
+
 print_info "  Copying Travis CI configuration..."
 cp templates/.travis.yml $EXPORT_LOCATION/.travis.yml
 sed -i "s/<PROJECT_NAME>/$PROJECT_NAME/g" $EXPORT_LOCATION/.travis.yml
