@@ -8,18 +8,36 @@ readonly ANSI_BLUE="\\033[34m"
 readonly ANSI_RESET="\\033[0m"
 readonly ANSI_CLEAR="\\033[0K"
 
+# Do not output colors if not running under a TTY (eg, piped or a non interactive shell)
+
 print_info() {
-  printf "${ANSI_BOLD}${ANSI_BLUE}%s${ANSI_RESET}\\n" "$1"
+  if [ -t 1 ]; then
+    printf "${ANSI_BOLD}${ANSI_BLUE}%s${ANSI_RESET}\\n" "$1"
+  else
+    echo "$1"
+  fi
 }
 
 print_notice() {
-  printf "${ANSI_BOLD}${ANSI_YELLOW}%s${ANSI_RESET}\\n" "$1"
+  if [ -t 1 ]; then
+    printf "${ANSI_BOLD}${ANSI_YELLOW}%s${ANSI_RESET}\\n" "$1"
+  else
+    echo "$1"
+  fi
 }
 
 print_success() {
-  printf "${ANSI_BOLD}${ANSI_GREEN}%s${ANSI_RESET}\\n" "$1"
+  if [ -t 1 ]; then
+    printf "${ANSI_BOLD}${ANSI_GREEN}%s${ANSI_RESET}\\n" "$1"
+  else
+    echo "$1"
+  fi
 }
 
 print_error() {
-  printf "${ANSI_BOLD}${ANSI_RED}%s${ANSI_RESET}\\n" "$1" 1>&2
+  if [ -t 1 ]; then
+    printf "${ANSI_BOLD}${ANSI_RED}%s${ANSI_RESET}\\n" "$1" 1>&2
+  else
+    echo "$1" 1>&2
+  fi
 }
