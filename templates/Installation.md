@@ -6,7 +6,7 @@ You can load **<PROJECT_NAME>** evaluating:
 ```smalltalk
 Metacello new
 	baseline: '<BASELINE_NAME>';
-	repository: 'github://<OWNER>/<REPO_NAME>:master/repository';
+	repository: 'github://<OWNER>/<REPO_NAME>:master/source';
 	load.
 ```
 >  Change `master` to some released version if you want a pinned version
