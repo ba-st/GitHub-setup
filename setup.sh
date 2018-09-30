@@ -64,6 +64,8 @@ print_success "  [OK]"
 
 print_info "  Copying source code format properties file..."
 cp templates/.properties "$EXPORT_LOCATION/source/.properties"
+cp templates/.project "$EXPORT_LOCATION/.project"
+cp templates/.gitattributes "$EXPORT_LOCATION/.gitattributes"
 print_success "  [OK]"
 
 print_info "  Copying Travis CI configuration..."
