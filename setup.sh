@@ -59,7 +59,7 @@ cp templates/LICENSE "$EXPORT_LOCATION/LICENSE"
 print_success "  [OK]"
 
 print_info "  Copying installation instructions..."
-sed "$REPLACE_TEMPLATE_VARS" templates/Installation.md > "$EXPORT_LOCATION/Installation.md"
+sed "$REPLACE_TEMPLATE_VARS" templates/Installation.md > "$EXPORT_LOCATION/docs/Installation.md"
 print_success "  [OK]"
 
 print_info "  Copying source code format properties file..."
