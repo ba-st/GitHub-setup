@@ -18,7 +18,7 @@ It will create a base project structure for a Pharo project following the [ba-st
 
 ### Pre-Requisites
 - Create your project in GitHub.
-- Login to [Travis CI](https://travis-ci.org) and enable the integration against your new repo
+- Login to [Travis CI](https://travis-ci.com) and enable the integration against your new repo
 - Login to [Coveralls](https://coveralls.io) and enable the integration against your new repo
 - Install the travis CLI because you will need it to setup the releases key
 
@@ -27,7 +27,7 @@ It will create a base project structure for a Pharo project following the [ba-st
 - Execute `setup.sh` providing the required information
 - Review the proposed files and adapt it to your own needs
 - Clone your new repository
-- You can ease the releases configuration in Travis CI by using `travis setup releases` on your repo and copying the encrypted key to the proposed travis yml file
+- You can ease the releases configuration in Travis CI by using `travis setup releases --com` on your repo and copying the encrypted key to the proposed travis yml file
 - Move the proposed file structure into your repo
 - Commit and push the changes to GitHub
 - Go to the repo settings and protect the master branch
