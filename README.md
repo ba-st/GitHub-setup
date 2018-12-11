@@ -20,7 +20,7 @@ It will create a base project structure for a Pharo project following the [ba-st
 - Create your project in GitHub.
 - Login to [Travis CI](https://travis-ci.com) and enable the integration against your new repo
 - Login to [Coveralls](https://coveralls.io) and enable the integration against your new repo
-- Install the travis CLI because you will need it to setup the releases key
+- [Install the travis CLI](https://github.com/travis-ci/travis.rb#installation) because you will need it to setup the releases key
 
 ### Usage
 - Clone this repository
