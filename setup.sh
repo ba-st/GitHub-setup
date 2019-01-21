@@ -36,7 +36,7 @@ if [ -d "$EXPORT_LOCATION" ]; then
   rm --recursive --force "$EXPORT_LOCATION"
 fi
 print_info "  Creating base directories..."
-mkdir --parents "$EXPORT_LOCATION"/{assets/logos,source,docs}
+mkdir -p "$EXPORT_LOCATION"/{assets/logos,source,docs}
 print_success "  [OK]"
 
 readonly REPLACE_TEMPLATE_VARS="
