@@ -33,7 +33,7 @@ fi
 readonly REPO_NAME="${REPO_OPTION:-$PROJECT_NAME}"
 readonly OWNER="${OWNER_OPTION:-ba-st}"
 readonly COPYRIGHT_HOLDER="${COPYRIGHT_HOLDER_OPTION:-"Buenos Aires Smalltalk Contributors"}"
-readonly DEFAULT_BRANCH="${OWNER_OPTION:-release-candidate}"
+readonly DEFAULT_BRANCH="${DEFAULT_BRANCH:-release-candidate}"
 
 print_notice "Creating template for $PROJECT_NAME hosted at https://github.com/$OWNER/$REPO_NAME"
 
