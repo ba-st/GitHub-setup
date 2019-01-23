@@ -6,10 +6,10 @@ You can load **<PROJECT_NAME>** evaluating:
 ```smalltalk
 Metacello new
 	baseline: '<BASELINE_NAME>';
-	repository: 'github://<OWNER>/<REPO_NAME>:master/source';
+	repository: 'github://<OWNER>/<REPO_NAME>:<DEFAULT_BRANCH>/source';
 	load.
 ```
->  Change `master` to some released version if you want a pinned version
+>  Change `<DEFAULT_BRANCH>` to some released version if you want a pinned version
 
 ## Using as dependency
 

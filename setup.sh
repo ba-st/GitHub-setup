@@ -12,13 +12,15 @@ PROJECT_OPTION=""
 REPO_OPTION=""
 OWNER_OPTION=""
 COPYRIGHT_HOLDER_OPTION=""
+DEFAULT_BRANCH=""
 # Parse command line options
-while getopts "p:r:o:c:h" option; do
+while getopts "p:r:o:c:d:h" option; do
   case $option in
     p) PROJECT_OPTION=$OPTARG ;;
     r) REPO_OPTION=$OPTARG ;;
     o) OWNER_OPTION=$OPTARG ;;
     c) COPYRIGHT_HOLDER_OPTION=$OPTARG ;;
+    d) DEFAULT_BRANCH=$OPTARG ;;
     h) usage ;;
   esac
 done
@@ -31,6 +33,7 @@ fi
 readonly REPO_NAME="${REPO_OPTION:-$PROJECT_NAME}"
 readonly OWNER="${OWNER_OPTION:-ba-st}"
 readonly COPYRIGHT_HOLDER="${COPYRIGHT_HOLDER_OPTION:-"Buenos Aires Smalltalk Contributors"}"
+readonly DEFAULT_BRANCH="${OWNER_OPTION:-release-candidate}"
 
 print_notice "Creating template for $PROJECT_NAME hosted at https://github.com/$OWNER/$REPO_NAME"
 
@@ -48,6 +51,7 @@ s/<REPO_NAME>/$REPO_NAME/g
 s/<BASELINE_NAME>/${REPO_NAME//-}/g
 s/<OWNER>/$OWNER/g
 s/<COPYRIGHT_HOLDER>/$COPYRIGHT_HOLDER/g
+s/<DEFAULT_BRANCH>/$DEFAULT_BRANCH/g
 "
 
 print_info "  Copying readme..."

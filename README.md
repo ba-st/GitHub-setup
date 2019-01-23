@@ -24,21 +24,23 @@ It will create a base project structure for a Pharo project following the [ba-st
 
 ### Usage
 - Clone this repository
-- Execute `setup.sh` providing the required information
+- Execute `setup.sh` providing the [required information](.usage.sh)
+- Choose the name of your default branch. We use `release-candidate`, if you want a different one adapt the next steps as needed and use `-d` option
 - Review the proposed files and adapt it to your own needs
 - Clone your new repository
+- Create a new branch called `release-candidate` : `git checkout -b release-candidate`
 - You can ease the releases configuration in Travis CI by using `travis setup releases --com` on your repo and copying the encrypted key to the proposed travis yml file
 - Move the proposed file structure into your repo
 - Commit and push the changes to GitHub
-- Go to the repo settings and protect the master branch
+- Go to the repo settings, set as default branch and protect the `release-candidate` branch
 
 ## Proposed Project Structure
 
 The script will propose the following structure:
 - `assets/` : Static resources
 - `assets/logos/` : Project logo images
-- `docs/` : Documentation 
-- `source/` : Source Code 
+- `docs/` : Documentation
+- `source/` : Source Code
 - `README.md` : Readme
 - `CONTRIBUTING.md` : Contribution Guidelines
 - `LICENSE` : MIT License
