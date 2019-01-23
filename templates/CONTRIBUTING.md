@@ -25,7 +25,7 @@ You can report issues [here](https://github.com/<OWNER>/<REPO_NAME>/issues/new)
 7. Do the changes
 8. Run the test cases
 9. Commit and push your changes to the branch using the Iceberg UI
-10. Create a Pull Request against the master branch
+10. Create a Pull Request against the `release-candidate` branch
 
 ## Contributing documentation
 

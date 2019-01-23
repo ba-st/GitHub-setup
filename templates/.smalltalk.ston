@@ -3,7 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : '<BASELINE_NAME>',
       #directory : 'source',
-      #load : [ 'Development' ],
+      #load : [ 'CI' ],
       #platforms : [  #pharo ]
     }
   ],
