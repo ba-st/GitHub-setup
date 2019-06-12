@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/logos/128x128.png">
  <h1 align="center"><PROJECT_NAME></h1>
   <p align="center">
-    What is this thing? “the motto” and the goals. The vision.
+    What is this thing? “the motto”, the goals, the vision.
     <br>
     <a href="docs/"><strong>Explore the docs »</strong></a>
     <br>
@@ -16,9 +16,10 @@
 [![Build Status](https://travis-ci.com/<OWNER>/<REPO_NAME>.svg?branch=<DEFAULT_BRANCH>)](https://travis-ci.com/<OWNER>/<REPO_NAME>)
 [![Coverage Status](https://coveralls.io/repos/github/<OWNER>/<REPO_NAME>/badge.svg?branch=<DEFAULT_BRANCH>)](https://coveralls.io/github/<OWNER>/<REPO_NAME>?branch=<DEFAULT_BRANCH>)
 
-Why would I care about this thing? When to use, for whom is designed, when not to use.
+Why would I care about this thing? When to use it? For whom is it designed? When not to use it?
 
 ## License
+
 - The code is licensed under [MIT](LICENSE).
 - The documentation is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -30,7 +31,7 @@ Why would I care about this thing? When to use, for whom is designed, when not t
 
 ## Installation
 
-To load the project in a Pharo image, or declare it as a dependency of your own project follow this [instructions](docs/Installation.md).
+To load the project in a Pharo image or declare it as a dependency of your project follow this [instructions](docs/Installation.md).
 
 ## Contributing
 
