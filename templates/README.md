@@ -15,6 +15,9 @@
 [![GitHub release](https://img.shields.io/github/release/<OWNER>/<REPO_NAME>.svg)](https://github.com/<OWNER>/<REPO_NAME>/releases/latest)
 [![Build Status](https://travis-ci.com/<OWNER>/<REPO_NAME>.svg?branch=<DEFAULT_BRANCH>)](https://travis-ci.com/<OWNER>/<REPO_NAME>)
 [![Coverage Status](https://coveralls.io/repos/github/<OWNER>/<REPO_NAME>/badge.svg?branch=<DEFAULT_BRANCH>)](https://coveralls.io/github/<OWNER>/<REPO_NAME>?branch=<DEFAULT_BRANCH>)
+[![Pharo 7.0](https://img.shields.io/badge/Pharo-7.0-informational)](https://pharo.org)
+[![Pharo 8.0](https://img.shields.io/badge/Pharo-8.0-informational)](https://pharo.org)
+
 
 Why would I care about this thing? When to use it? For whom is it designed? When not to use it?
 
