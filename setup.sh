@@ -15,6 +15,7 @@ COPYRIGHT_HOLDER_OPTION=""
 DEFAULT_BRANCH=""
 # Parse command line options
 while getopts "p:r:o:c:d:h" option; do
+  #shellcheck disable=SC2220
   case $option in
     p) PROJECT_OPTION=$OPTARG ;;
     r) REPO_OPTION=$OPTARG ;;
@@ -76,7 +77,7 @@ cp templates/.project "$EXPORT_LOCATION/.project"
 cp templates/.gitattributes "$EXPORT_LOCATION/.gitattributes"
 print_success "  [OK]"
 
-print_info "  Copying Travis CI configuration..."
-sed "$REPLACE_TEMPLATE_VARS" templates/.travis.yml > "$EXPORT_LOCATION/.travis.yml"
+print_info "  Copying GitHub Actions configuration..."
+cp -r templates/.github "$EXPORT_LOCATION/.github"
 sed "$REPLACE_TEMPLATE_VARS" templates/.smalltalk.ston > "$EXPORT_LOCATION/.smalltalk.ston"
 print_success "  [OK]"
