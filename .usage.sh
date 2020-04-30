@@ -5,6 +5,7 @@ usage() {
         print_error "Error: $*"
     fi
 
+    #shellcheck disable=SC2086
     cat << EOF
 Usage: $(basename $0) -p PROJECT_NAME [-r REPO_NAME] [-o OWNER] [-c COPYRIGHT_HOLDER] [-d DEFAULT_BRANCH] [-b BUILD_SERVICE]
 This program will create a project template using ba-st conventions.
