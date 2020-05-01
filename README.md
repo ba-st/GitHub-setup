@@ -18,9 +18,19 @@ It will create a base project structure for a Pharo project following the [ba-st
 
 ### Pre-Requisites
 - Create your project in GitHub.
+
+If you want to use GitHub Actions no further configuration is needed.
+
+If you want to use Travis CI: 
 - Login to [Travis CI](https://travis-ci.com) and enable the integration against your new repo
-- Login to [Coveralls](https://coveralls.io) and enable the integration against your new repo
 - [Install the travis CLI](https://github.com/travis-ci/travis.rb#installation) because you will need it to setup the releases key
+
+If you want to use CodeCov login to [CodeCov](https://codecov.io/gh), enable the GitHub integration and create a new secret in your repo (`CODECOV_TOKEN`) with the provided token.
+
+If you want to use Coveralls:
+- Login to [Coveralls](https://coveralls.io) and enable the integration against your new repo
+
+If you want to use the automatic e-mail notification on releases follow the instructions in https://github.com/ba-st-actions/email-release-notification.
 
 ### Usage
 - Clone this repository
@@ -29,7 +39,7 @@ It will create a base project structure for a Pharo project following the [ba-st
 - Review the proposed files and adapt it to your own needs
 - Clone your new repository
 - Create a new branch called `release-candidate` : `git checkout -b release-candidate`
-- You can ease the releases configuration in Travis CI by using `travis setup releases --com` on your repo and copying the encrypted key to the proposed travis yml file
+- If you're using Travis CI you can ease the releases configuration by using `travis setup releases --com` on your repo and copying the encrypted key to the proposed travis yml file
 - Move the proposed file structure into your repo
 - Commit and push the changes to GitHub
 - Go to the repo settings, set as default branch and protect the `release-candidate` branch
