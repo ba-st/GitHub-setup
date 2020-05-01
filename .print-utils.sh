@@ -6,7 +6,6 @@ readonly ANSI_GREEN="\\033[32m"
 readonly ANSI_YELLOW="\\033[33m"
 readonly ANSI_BLUE="\\033[34m"
 readonly ANSI_RESET="\\033[0m"
-readonly ANSI_CLEAR="\\033[0K"
 
 # Do not output colors if not running under a TTY (eg, piped or a non interactive shell)
 
