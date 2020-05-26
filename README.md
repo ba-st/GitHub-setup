@@ -8,6 +8,7 @@
     <a href="https://github.com/ba-st/GitHub-setup/issues/new?labels=Type%3A+Feature">Request feature</a>
   </p>
 
+![Shellcheck](https://github.com/ba-st/GitHub-setup/workflows/Shellcheck/badge.svg?branch=master)
 
 It will create a base project structure for a Pharo project following the [ba-st](https://github.com/ba-st) conventions.
 
