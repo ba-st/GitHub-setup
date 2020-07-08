@@ -11,10 +11,12 @@ jobs:
     name: ${{ matrix.smalltalk }}
     steps:
       - uses: actions/checkout@v2
-      - uses: ba-st-actions/setup-smalltalkCI@v1.0.0
+      - name: Set up Smalltalk CI
+        uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
-      - run: smalltalkci -s ${{ matrix.smalltalk }}
+      - name: Load Image and Run Tests
+        run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
       - run: echo "::set-env name=SCI_COVERAGE_FILE_LOCATION::${HOME}/.smalltalkCI/_builds/coveralls_results.json"
       - name: Upload coverage to Codecov
