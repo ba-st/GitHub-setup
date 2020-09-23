@@ -9,9 +9,8 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #packages : [ '<REPO_NAME>*' ],
-       #service: #codecov,
-       #auto_upload: false
+      #packages : [ '<REPO_NAME>*' ],
+      #format: #lcov
     }
   }
 }
