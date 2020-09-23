@@ -21,7 +21,7 @@ setUpDependencies: spec
 	spec
 		baseline: '<BASELINE_NAME>'
 			with: [ spec
-				repository: 'github://<OWNER>/<REPO_NAME>:v{XX}/source';
+				repository: 'github://<OWNER>/<REPO_NAME>:v{XX}';
 				loads: #('Deployment') ];
 		import: '<BASELINE_NAME>'.
 ```
