@@ -1,7 +1,6 @@
 # GitHub Setup
 
 ![Shellcheck](https://github.com/ba-st/GitHub-setup/workflows/Shellcheck/badge.svg?branch=master)
-![Markdown Lint](https://github.com/ba-st/GitHub-setup/workflows/Markdown%20Lint/badge.svg?branch=master)
 
 This is a tiny script easing the setup of Pharo projects in GitHub.
 
