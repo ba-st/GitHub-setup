@@ -3,13 +3,15 @@
 ## Basic Installation
 
 You can load **<PROJECT_NAME>** evaluating:
+
 ```smalltalk
 Metacello new
-	baseline: '<BASELINE_NAME>';
-	repository: 'github://<OWNER>/<REPO_NAME>:<DEFAULT_BRANCH>/source';
-	load.
+  baseline: '<BASELINE_NAME>';
+  repository: 'github://<OWNER>/<REPO_NAME>:<DEFAULT_BRANCH>/source';
+  load.
 ```
->  Change `<DEFAULT_BRANCH>` to some released version if you want a pinned version
+
+> Change `<DEFAULT_BRANCH>` to some released version if you want a pinned version
 
 ## Using as dependency
 
@@ -18,23 +20,24 @@ In order to include **<PROJECT_NAME>** as part of your project, you should refer
 ```smalltalk
 setUpDependencies: spec
 
-	spec
-		baseline: '<BASELINE_NAME>'
-			with: [ spec
-				repository: 'github://<OWNER>/<REPO_NAME>:v{XX}';
-				loads: #('Deployment') ];
-		import: '<BASELINE_NAME>'.
+  spec
+    baseline: '<BASELINE_NAME>'
+      with: [ spec
+        repository: 'github://<OWNER>/<REPO_NAME>:v{XX}';
+        loads: #('Deployment') ];
+    import: '<BASELINE_NAME>'.
 ```
+
 > Replace `{XX}` with the version you want to depend on
 
 ```smalltalk
 baseline: spec
 
-	<baseline>
-	spec
-		for: #common
-		do: [ self setUpDependencies: spec.
-			spec package: 'My-Package' with: [ spec requires: #('<BASELINE_NAME>') ] ]
+  <baseline>
+  spec
+    for: #common
+    do: [ self setUpDependencies: spec.
+      spec package: 'My-Package' with: [ spec requires: #('<BASELINE_NAME>') ] ]
 ```
 
 ## Provided groups
