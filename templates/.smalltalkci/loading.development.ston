@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : '<BASELINE_NAME>',
+      #directory : '../source',
+      #load : [ 'Development' ],
+      #platforms : [  #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ '<REPO_NAME>*' ],
+      #format: #lcov
+    }
+  }
+}

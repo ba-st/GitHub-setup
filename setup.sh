@@ -28,7 +28,7 @@ while getopts "p:r:o:c:d:b:h" option; do
     h) usage ;;
   esac
 done
-shift $(($OPTIND - 1)); # take out the option flags
+shift $((OPTIND - 1)); # take out the option flags
 
 readonly PROJECT_NAME="$PROJECT_OPTION"
 if [ -z "$PROJECT_NAME" ] ; then
@@ -88,9 +88,13 @@ print_success "  [OK]"
 if [ "${BUILD_SERVICE}" == "github" ]; then
   print_info "  Copying GitHub Actions configuration..."
   cp -r templates/.github "$EXPORT_LOCATION/.github"
+  mkdir "$EXPORT_LOCATION/.smalltalkci"
+  for filename in templates/.smalltalkci/*; do
+    sed "$REPLACE_TEMPLATE_VARS" "$filename" > "$EXPORT_LOCATION/.smalltalkci/$(basename "$filename")"
+  done
 elif [ "${BUILD_SERVICE}" == "travis" ]; then
   print_info "  Copying Travis CI configuration..."
   sed "$REPLACE_TEMPLATE_VARS" templates/.travis.yml > "$EXPORT_LOCATION/.travis.yml"
+  sed "$REPLACE_TEMPLATE_VARS" templates/.smalltalkci/unit-tests.ston > "$EXPORT_LOCATION/.smalltalk.ston"
 fi
-sed "$REPLACE_TEMPLATE_VARS" templates/.smalltalk.ston > "$EXPORT_LOCATION/.smalltalk.ston"
 print_success "  [OK]"
