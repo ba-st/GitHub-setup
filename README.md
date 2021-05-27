@@ -27,7 +27,7 @@ The code is licensed under [MIT](LICENSE).
 - Configure Coverage
   - If you want to use CodeCov login to [CodeCov](https://codecov.io/gh), enable the GitHub integration and create a new secret in your repo (`CODECOV_TOKEN`) with the provided token.
   - If you want to use Coveralls login to [Coveralls](https://coveralls.io) and enable the integration against your new repo
-- If you want to use the automatic e-mail notification on releases follow the instructions in https://github.com/ba-st-actions/email-release-notification.
+- If you want to use the automatic e-mail notification on releases follow the instructions [here](https://github.com/ba-st-actions/email-release-notification).
 
 ### Usage
 

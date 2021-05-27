@@ -88,7 +88,6 @@ print_success "  [OK]"
 if [ "${BUILD_SERVICE}" == "github" ]; then
   print_info "  Copying GitHub Actions configuration..."
   cp -r templates/.github "$EXPORT_LOCATION/.github"
-  cp .github/workflows/markdown-lint.yml "$EXPORT_LOCATION/.github/workflows/markdown-lint.yml"
   mkdir "$EXPORT_LOCATION/.smalltalkci"
   for filename in templates/.smalltalkci/*; do
     sed "$REPLACE_TEMPLATE_VARS" "$filename" > "$EXPORT_LOCATION/.smalltalkci/$(basename "$filename")"
