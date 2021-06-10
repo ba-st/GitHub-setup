@@ -2,10 +2,6 @@
 
 What is this thing? “the motto”, the goals, the vision.
 
-- [Explore the docs »](docs/)
-- [Report a defect](https://github.com/<OWNER>/<REPO_NAME>/issues/new?labels=Type%3A+Defect)    |
-- [Request feature](https://github.com/<OWNER>/<REPO_NAME>/issues/new?labels=Type%3A+Feature)
-
 [![Unit Tests](https://github.com/<OWNER>/<REPO_NAME>/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/<OWNER>/<REPO_NAME>/actions/workflows/unit-tests.yml/badge.svg)
 [![Coverage Status](https://codecov.io/github/<OWNER>/<REPO_NAME>/coverage.svg?branch=<DEFAULT_BRANCH>)](https://codecov.io/gh/<OWNER>/<REPO_NAME>/branch/<DEFAULT_BRANCH>)
 [![Group loading check](https://github.com/<OWNER>/<REPO_NAME>/actions/workflows/loading-groups.yml/badge.svg)](https://github.com/<OWNER>/<REPO_NAME>/actions/workflows/loading-groups.yml)
@@ -15,7 +11,14 @@ What is this thing? “the motto”, the goals, the vision.
 [![Pharo 8.0](https://img.shields.io/badge/Pharo-8.0-informational)](https://pharo.org)
 [![Pharo 9.0](https://img.shields.io/badge/Pharo-9.0-informational)](https://pharo.org)
 
-Why would I care about this thing? When to use it? For whom is it designed? When not to use it?
+Why would I care about this thing? When to use it? For whom is it designed?
+When not to use it?
+
+Quick links
+
+- [**Explore the docs**](docs/)
+- [Report a defect](https://github.com/<OWNER>/<REPO_NAME>/issues/new?labels=Type%3A+Defect)
+- [Request a feature](https://github.com/<OWNER>/<REPO_NAME>/issues/new?labels=Type%3A+Feature)
 
 ## License
 
@@ -30,7 +33,8 @@ Why would I care about this thing? When to use it? For whom is it designed? When
 
 ## Installation
 
-To load the project in a Pharo image or declare it as a dependency of your project follow this [instructions](docs/Installation.md).
+To load the project in a Pharo image or declare it as a dependency of your
+project follow this [instructions](docs/Installation.md).
 
 ## Contributing
 
