@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : '<BASELINE_NAME>',
+      #baseline : '{{BASELINE_NAME}}',
       #directory : '../source',
       #load : [ 'Development' ],
       #platforms : [  #pharo ]
@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-      #packages : [ '<REPO_NAME>*' ],
+      #packages : [ '{{REPO_NAME}}*' ],
       #format: #lcov
     }
   }

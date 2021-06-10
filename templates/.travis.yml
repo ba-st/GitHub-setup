@@ -7,9 +7,9 @@ smalltalk:
 - Pharo64-7.0
 - Pharo32-7.0
 before_deploy:
-  - cp "${SMALLTALK_CI_IMAGE}" "<PROJECT_NAME>.image"
-  - cp "${SMALLTALK_CI_CHANGES}" "<PROJECT_NAME>.changes"
-  - zip -q "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip" "<PROJECT_NAME>.image" "<PROJECT_NAME>.changes"
+  - cp "${SMALLTALK_CI_IMAGE}" "{{PROJECT_NAME}}.image"
+  - cp "${SMALLTALK_CI_CHANGES}" "{{PROJECT_NAME}}.changes"
+  - zip -q "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip" "{{PROJECT_NAME}}.image" "{{PROJECT_NAME}}.changes"
 deploy:
   provider: releases
   api_key:
@@ -17,5 +17,5 @@ deploy:
   file: "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip"
   skip_cleanup: true
   on:
-    repo: <OWNER>/<REPO_NAME>
+    repo: {{OWNER}}/{{REPO_NAME}}
     tags: true

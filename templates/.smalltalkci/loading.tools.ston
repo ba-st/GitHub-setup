@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : '<BASELINE_NAME>',
+      #baseline : '{{BASELINE_NAME}}',
       #directory : '../source',
       #load : [ 'Tools' ],
       #platforms : [  #pharo ]
