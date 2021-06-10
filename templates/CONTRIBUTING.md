@@ -1,12 +1,12 @@
 # Contributing
 
-There's several ways to contribute to the project: reporting bugs, sending
+There are several ways to contribute to the project: reporting bugs, sending
 feedback, proposing ideas for new features, fixing or adding documentation,
 promoting the project, or even contributing code.
 
 ## Reporting issues
 
-You can report issues [here](https://github.com/<OWNER>/<REPO_NAME>/issues/new)
+You can report issues [here](https://github.com/{{OWNER}}/{{REPO_NAME}}/issues/new)
 
 ## Contributing Code
 
@@ -16,7 +16,7 @@ You can report issues [here](https://github.com/<OWNER>/<REPO_NAME>/issues/new)
   incompatible change is made the major version MUST be increased.
 - The source code is hosted in this repository using the Tonel format in the
   `source` folder.
-- The `<DEFAULT_BRANCH>` branch contains the latest changes and should always
+- The `{{DEFAULT_BRANCH}}` branch contains the latest changes and should always
   be in a releasable state.
 - Feel free to send pull requests or fork the project.
 - Code contributions without test cases have a lower probability of being merged
@@ -34,7 +34,7 @@ You can report issues [here](https://github.com/<OWNER>/<REPO_NAME>/issues/new)
 7. Do the changes
 8. Run the test cases
 9. Commit and push your changes to the branch using the Iceberg UI
-10. Create a Pull Request against the `<DEFAULT_BRANCH>` branch
+10. Create a Pull Request against the `{{DEFAULT_BRANCH}}` branch
 
 ## Contributing documentation
 

@@ -55,12 +55,12 @@ mkdir -p "$EXPORT_LOCATION"/{assets/logos,source,docs}
 print_success "  [OK]"
 
 readonly REPLACE_TEMPLATE_VARS="
-s/<PROJECT_NAME>/$PROJECT_NAME/g
-s/<REPO_NAME>/$REPO_NAME/g
-s/<BASELINE_NAME>/${REPO_NAME//-}/g
-s/<OWNER>/$OWNER/g
-s/<COPYRIGHT_HOLDER>/$COPYRIGHT_HOLDER/g
-s/<DEFAULT_BRANCH>/$DEFAULT_BRANCH/g
+s/{{PROJECT_NAME}}/$PROJECT_NAME/g
+s/{{REPO_NAME}}/$REPO_NAME/g
+s/{{BASELINE_NAME}}/${REPO_NAME//-}/g
+s/{{OWNER}}/$OWNER/g
+s/{{COPYRIGHT_HOLDER}}/$COPYRIGHT_HOLDER/g
+s/{{DEFAULT_BRANCH}}/$DEFAULT_BRANCH/g
 "
 
 print_info "  Copying readme..."
