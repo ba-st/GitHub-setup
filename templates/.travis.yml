@@ -3,9 +3,8 @@ sudo: false
 os:
 - linux
 smalltalk:
-- Pharo64-8.0
-- Pharo64-7.0
-- Pharo32-7.0
+- Pharo64-10
+- Pharo64-9.0
 before_deploy:
   - cp "${SMALLTALK_CI_IMAGE}" "{{PROJECT_NAME}}.image"
   - cp "${SMALLTALK_CI_CHANGES}" "{{PROJECT_NAME}}.changes"

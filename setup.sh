@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # Import utilities
+# shellcheck source=.print-utils.sh
 source ".print-utils.sh"
+# shellcheck source=.usage.sh
 source ".usage.sh"
 
 # Exit and show help if the command line is empty
@@ -51,7 +53,7 @@ if [ -d "$EXPORT_LOCATION" ]; then
   rm --recursive --force "$EXPORT_LOCATION"
 fi
 print_info "  Creating base directories..."
-mkdir -p "$EXPORT_LOCATION"/{assets/logos,source,docs}
+mkdir -p "$EXPORT_LOCATION"/{assets,source,docs,docs/explanation,docs/how-to,docs/reference,docs/tutorial}
 print_success "  [OK]"
 
 readonly REPLACE_TEMPLATE_VARS="
@@ -75,8 +77,15 @@ print_info "  Copying license..."
 sed "$REPLACE_TEMPLATE_VARS" templates/LICENSE > "$EXPORT_LOCATION/LICENSE"
 print_success "  [OK]"
 
+print_info "  Copying basic documentation..."
+sed "$REPLACE_TEMPLATE_VARS" templates/docs/README.md > "$EXPORT_LOCATION/docs/README.md"
+sed "$REPLACE_TEMPLATE_VARS" templates/docs/reference/Baseline-groups.md > "$EXPORT_LOCATION/docs/reference/Baseline-groups.md"
+print_success "  [OK]"
+
+
 print_info "  Copying installation instructions..."
-sed "$REPLACE_TEMPLATE_VARS" templates/Installation.md > "$EXPORT_LOCATION/docs/Installation.md"
+sed "$REPLACE_TEMPLATE_VARS" templates/docs/how-to/how-to-load-in-pharo.md > "$EXPORT_LOCATION/docs/how-to/how-to-load-in-pharo.md"
+sed "$REPLACE_TEMPLATE_VARS" templates/docs/how-to/how-to-use-as-dependency-in-pharo.md > "$EXPORT_LOCATION/docs/how-to/how-to-use-as-dependency-in-pharo.md"
 print_success "  [OK]"
 
 print_info "  Copying source code format properties file..."
@@ -98,3 +107,5 @@ elif [ "${BUILD_SERVICE}" == "travis" ]; then
   sed "$REPLACE_TEMPLATE_VARS" templates/.smalltalkci/unit-tests.ston > "$EXPORT_LOCATION/.smalltalk.ston"
 fi
 print_success "  [OK]"
+
+print_notice "Review the proposed files in the build directory and adapt it to your own needs"

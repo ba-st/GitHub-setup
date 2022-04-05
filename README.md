@@ -57,13 +57,16 @@ The code is licensed under [MIT](LICENSE).
 The script will propose the following structure:
 
 - `assets/` : Static resources
-- `assets/logos/` : Project logo images
 - `docs/` : Documentation
+- `docs/README.md` : Documentation readme
+- `docs/explanation` : [Explanations and discussions](https://documentation.divio.com/explanation/)
+- `docs/how-to` : [How-to guides](https://documentation.divio.com/how-to-guides/)
+- `docs/reference` : [Reference guides](https://documentation.divio.com/reference/)
+- `docs/tutorial` : [Tutorials](https://documentation.divio.com/tutorials/)
 - `source/` : Source Code
 - `README.md` : Readme
 - `CONTRIBUTING.md` : Contribution Guidelines
 - `LICENSE` : MIT License
-- `docs/Installation.md` : Extended installation instructions
 
 ## Contributing
 

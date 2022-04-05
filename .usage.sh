@@ -20,7 +20,7 @@ Options:
 -h                  Display this usage message and exit.
 
 Example:
-    $(basename $0) -p "Willow Bootstrap" -r Willow-Bootstrap -o gcotelli -c "Monsters Inc." -d master
+    $(basename $0) -p "Willow Bootstrap" -r Willow-Bootstrap -o gcotelli -c "Monsters Inc." -d main
 EOF
 
     exit 1
