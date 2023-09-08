@@ -1,4 +1,6 @@
-# Baseline Groups
+# Loading targets
+
+## Pharo Baseline Groups
 
 {{PROJECT_NAME}} includes the following groups in its Baseline that can be used as
 loading targets:

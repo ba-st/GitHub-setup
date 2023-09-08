@@ -7,7 +7,7 @@ usage() {
 
     #shellcheck disable=SC2086
     cat << EOF
-Usage: $(basename $0) -p PROJECT_NAME [-r REPO_NAME] [-o OWNER] [-c COPYRIGHT_HOLDER] [-d DEFAULT_BRANCH] [-b BUILD_SERVICE]
+Usage: $(basename $0) -p PROJECT_NAME [-r REPO_NAME] [-o OWNER] [-c COPYRIGHT_HOLDER] [-d DEFAULT_BRANCH]
 This program will create a project template using ba-st conventions.
 Options:
 -p PROJECT_NAME     Used for the name of the project.
@@ -15,8 +15,6 @@ Options:
 -o OWNER            Used as the repository owner. Defaults to ba-st.
 -c COPYRIGHT_HOLDER Used as the copyright holder in the license file. Defaults to Buenos Aires Smalltalk Contributors.
 -d DEFAULT_BRANCH   Used as the default branch name in the documentation templates. Defaults to release-candidate.
--b BUILD_SERVICE    Used to configure the build service to use. Defaults to github.
-                      The valid options are github (GitHub Actions) and travis (Travis CI).
 -h                  Display this usage message and exit.
 
 Example:

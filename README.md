@@ -19,13 +19,6 @@ The code is licensed under [MIT](LICENSE).
 ### Pre-Requisites
 
 - Create your project in GitHub.
-- Configure CI
-  - If you want to use GitHub Actions no further configuration is needed.
-  - If you want to use Travis CI:
-    - Login to [Travis CI](https://travis-ci.com) and enable the integration
-    against your new repo
-    - [Install the travis CLI](https://github.com/travis-ci/travis.rb#installation)
-    because you will need it to setup the releases key
 - Configure Coverage
   - If you want to use CodeCov login to [CodeCov](https://codecov.io/gh), enable
   the GitHub integration and create a new secret in your repo (`CODECOV_TOKEN`)
@@ -44,9 +37,6 @@ The code is licensed under [MIT](LICENSE).
 - Review the proposed files and adapt it to your own needs
 - Clone your new repository
 - Create a new branch called `release-candidate` : `git checkout -b release-candidate`
-- If you're using Travis CI you can ease the releases configuration by using
-  `travis setup releases --com` on your repo and copying the encrypted key
-  to the proposed travis yml file
 - Move the proposed file structure into your repo (keep an eye on the hidden files)
 - Commit and push the changes to GitHub
 - Go to the repo settings, set as default branch and protect the
@@ -58,13 +48,13 @@ The script will propose the following structure:
 
 - `assets/` : Static resources
 - `docs/` : Documentation
-- `docs/README.md` : Documentation readme
+- `docs/README.md` : Documentation README
 - `docs/explanation` : [Explanations and discussions](https://documentation.divio.com/explanation/)
 - `docs/how-to` : [How-to guides](https://documentation.divio.com/how-to-guides/)
 - `docs/reference` : [Reference guides](https://documentation.divio.com/reference/)
 - `docs/tutorial` : [Tutorials](https://documentation.divio.com/tutorials/)
 - `source/` : Source Code
-- `README.md` : Readme
+- `README.md` : README
 - `CONTRIBUTING.md` : Contribution Guidelines
 - `LICENSE` : MIT License
 

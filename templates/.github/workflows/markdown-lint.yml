@@ -1,8 +1,11 @@
 name: Markdown Lint
-on: [push,pull_request,workflow_dispatch]
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
 jobs:
-  remark-lint:
-    name: runner / markdownlint
+  markdown-lint:
+    name: Markdown Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
