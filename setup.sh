@@ -72,7 +72,7 @@ print_success "  [OK]"
 
 print_info "  Copying basic documentation..."
 sed "$REPLACE_TEMPLATE_VARS" templates/docs/README.md > "$EXPORT_LOCATION/docs/README.md"
-sed "$REPLACE_TEMPLATE_VARS" templates/docs/reference/Baseline-groups.md > "$EXPORT_LOCATION/docs/reference/Baseline-groups.md"
+sed "$REPLACE_TEMPLATE_VARS" templates/docs/reference/loading-targets.md > "$EXPORT_LOCATION/docs/reference/loading-targets.md"
 print_success "  [OK]"
 
 
