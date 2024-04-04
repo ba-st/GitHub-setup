@@ -17,7 +17,7 @@ COPYRIGHT_HOLDER_OPTION=""
 DEFAULT_BRANCH=""
 
 # Parse command line options
-while getopts "p:r:o:c:d:b:h" option; do
+while getopts "p:r:o:c:d:h" option; do
   #shellcheck disable=SC2220
   case $option in
     p) PROJECT_OPTION=$OPTARG ;;
