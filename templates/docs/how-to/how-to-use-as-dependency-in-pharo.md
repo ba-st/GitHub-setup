@@ -3,7 +3,7 @@
 In order to include **{{PROJECT_NAME}}** as part of your project, you should reference
 the package in your product baseline:
 
-1. Define the {{PROJECT_NAME}} repository and version to be used, and the [baseline groups](../reference/Baseline-groups.md)
+1. Define the {{PROJECT_NAME}} repository and version to be used, and the [loading targets](../reference/loading-targets.md)
     you want to depend on (usually it will be `Deployment`).
 
     If you're unsure on what to depend use the *Dependency Analyzer*

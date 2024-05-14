@@ -1,10 +1,8 @@
 name: Pharo Loading Targets
-
 on:
   - push
   - pull_request
   - workflow_dispatch
-
 jobs:
    loading-targets:
     runs-on: ubuntu-latest
@@ -12,8 +10,8 @@ jobs:
       fail-fast: false
       matrix:
         smalltalk:
-          - Pharo64-10
           - Pharo64-11
+          - Pharo64-12
         load-target:
           - development
           - dependent-sunit-extensions

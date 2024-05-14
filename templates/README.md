@@ -10,8 +10,8 @@ What is this thing? “the motto”, the goals, the vision.
 [![Markdown Lint](https://github.com/{{OWNER}}/{{REPO_NAME}}/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/{{OWNER}}/{{REPO_NAME}}/actions/workflows/markdown-lint.yml)
 
 [![GitHub release](https://img.shields.io/github/release/{{OWNER}}/{{REPO_NAME}}.svg)](https://github.com/{{OWNER}}/{{REPO_NAME}}/releases/latest)
-[![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-informational)](https://pharo.org)
+[![Pharo 12](https://img.shields.io/badge/Pharo-12-informational)](https://pharo.org)
 
 Why would I care about this thing? When to use it? For whom is it designed?
 When not to use it?

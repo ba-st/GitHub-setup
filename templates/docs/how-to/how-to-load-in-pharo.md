@@ -18,7 +18,7 @@
 
 ## Using Iceberg
 
-1. Download [pharo VM and image](https://pharo.org/download)
+1. Download [Pharo VM and image](https://pharo.org/download)
 2. Open your Pharo image
 3. Open Iceberg
 4. Click the *Add* repository button

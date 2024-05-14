@@ -31,7 +31,7 @@ The code is licensed under [MIT](LICENSE).
 ### Usage
 
 - Clone this repository
-- Execute `setup.sh` providing the [required information](.usage.sh)
+- Run `setup.sh` providing the [required information](.usage.sh)
 - Choose the name of your default branch. We use `release-candidate`, if you
   want a different one adapt the next steps as needed and use `-d` option
 - Review the proposed files and adapt it to your own needs
