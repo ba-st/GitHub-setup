@@ -1,0 +1,30 @@
+name: Pharo Loading Target
+on:
+  workflow_call:
+    inputs:
+      load-target:
+        required: true
+        type: string
+jobs:
+   loading-target-pharo-12:
+    runs-on: ubuntu-latest
+    name: Pharo 12
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ba-st-actions/pharo-ci@v12
+        with:
+          spec: .smalltalkci/loading.${{ inputs.load-target }}.ston
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        timeout-minutes: 15
+   loading-target-pharo-13:
+    runs-on: ubuntu-latest
+    name: Pharo 13
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ba-st-actions/pharo-ci@v13
+        with:
+          spec: .smalltalkci/loading.${{ inputs.load-target }}.ston
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        timeout-minutes: 15
